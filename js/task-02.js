@@ -7,14 +7,13 @@ const ingredients = [
   'Condiments',
 ];
 let listUl = document.getElementById("ingredients");
-const ingredientAll =  ingredients.forEach((ingredient) => {
+const items = ingredients.map((ingredient) => {
  const list = document.createElement('li');
  list.classList.add('item');
- list.textContent = (ingredient);
+ list.textContent = ingredient;
  listUl.append(list);
-})
 console.log(listUl)
-
+})
 
 
 
