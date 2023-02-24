@@ -11,11 +11,11 @@ const items = ingredients.map((ingredient) => {
  const list = document.createElement('li');
  list.classList.add('item');
  list.textContent = ingredient;
- listUl.append(list);
-console.log(listUl)
+ return list;
+
 })
 
-
+listUl.append(...items);
 
 
 
